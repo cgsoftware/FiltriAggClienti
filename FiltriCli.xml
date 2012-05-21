@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+      
+          <record id="view_res_partner_address_filter_agg_cli" model="ir.ui.view">
+            <field name="name">res.partner.address.select2</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter"/>
+            <field name="arch" type="xml">
+                       <field name="country" position="after" >
+                                              
+   			              <field name="city"    />
+           			      <field name="province"   />
+         		         <field name="vat"    />
+              			 <field name="region"   />
+
+                                  
+		      </field>
+	    </field>
+	  </record>    
+    
+        </data>
+</openerp>
